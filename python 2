@@ -1,0 +1,118 @@
+print("1. Numbers 1 to 10")
+for i in range(1, 11):
+    print(i, end=" ")
+print()
+
+print("2. Even numbers up to 20")
+for i in range(2, 21, 2):
+    print(i, end=" ")
+print()
+
+print("3. Countdown from 10")
+for i in range(10, 0, -1):
+    print(i, end=" ")
+print()
+
+print("4. Sum of 1 to 100")
+total = 0
+for i in range(1, 101):
+    total += i
+print(total)
+
+print("5. Multiplication table of 7")
+for i in range(1, 11):
+    print(f"7 x {i} = {7 * i}")
+
+print("6. Factorial of 5")
+fact = 1
+for i in range(1, 6):
+    fact *= i
+print(fact)
+
+print("7. Loop through a list")
+fruits = ["apple", "banana", "mango"]
+for fruit in fruits:
+    print(fruit)
+
+print("8. Loop with index using enumerate")
+for index, fruit in enumerate(fruits):
+    print(index, fruit)
+
+print("9. Loop through a string")
+for ch in "python":
+    print(ch, end=" ")
+print()
+
+print("10. Count vowels in a string")
+count = 0
+for ch in "programming":
+    if ch in "aeiou":
+        count += 1
+print(count)
+
+print("11. Reverse a string")
+word = "hello"
+rev = ""
+for ch in word:
+    rev = ch + rev
+print(rev)
+
+print("12. Largest number in a list")
+nums = [4, 9, 2, 15, 7]
+largest = nums[0]
+for n in nums:
+    if n > largest:
+        largest = n
+print(largest)
+
+print("13. Skip 5 using continue")
+for i in range(1, 8):
+    if i == 5:
+        continue
+    print(i, end=" ")
+print()
+
+print("14. Stop at 5 using break")
+for i in range(1, 10):
+    if i == 5:
+        break
+    print(i, end=" ")
+print()
+
+print("15. Right triangle star pattern")
+for i in range(1, 6):
+    print("*" * i)
+
+print("16. Number pyramid using nested loops")
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
+
+print("17. Square star pattern")
+for i in range(4):
+    for j in range(4):
+        print("*", end=" ")
+    print()
+
+print("18. Loop through a dictionary")
+marks = {"math": 90, "science": 85, "english": 88}
+for subject, score in marks.items():
+    print(subject, score)
+
+print("19. Prime numbers up to 30")
+for num in range(2, 31):
+    is_prime = True
+    for d in range(2, int(num ** 0.5) + 1):
+        if num % d == 0:
+            is_prime = False
+            break
+    if is_prime:
+        print(num, end=" ")
+print()
+
+print("20. for else example")
+for i in range(3):
+    print(i)
+else:
+    print("Loop finished")
